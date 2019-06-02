@@ -67,7 +67,7 @@
         _("display").innerHTML = "";//reset display;
 
         for (let game of gamesCreated) {
-            data += `JSON.stringify(game) <button type="button" onclick="removeGame(${game.id})">-</button>`
+            data += `${JSON.stringify(game)} <button type="button" onclick="removeGame(${game.id})">-</button>`
         }
         _("display").innerHTML += data;
 
