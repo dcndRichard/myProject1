@@ -3,7 +3,7 @@ function fun(x){
         console.log(x)
     }
 }
-var haveing = fun('coding');
+var haveing = fun('codings');
 haveing();
 
 var arr =['dog','cat','hen']
