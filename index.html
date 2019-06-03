@@ -17,13 +17,20 @@
                 <input type="text" id="newGame">
             </div>
             <div>
-                <select name="numPlayers" id="numPlayers">
-                    <option value="0">how many players</option>      
-                    <option value="1">1</option>      
-                    <option value="2">3</option>      
-                    <option value="3">3</option>      
-                    <option value="4">4</option>      
-                    <option value="5">5</option>      
+                <select name="numPlayers" id="numPlayers">   
+                    <script>
+                        nums = [
+                            {l:'how many players',v:0},{l:1,v:1},{l:2,v:2},{l:3,v:3},
+                            {l:4,v:4},{l:5,v:5},{l:6,v:6}, {l:6,v:6},
+                            {l:7,v:7},{l:8,v:8},{l:9,v:9},{l:10,v:10},
+                            {l:11,v:11},
+                        ];
+                        var option = '';
+                        for(let item of nums){
+                             option +=`<option value="${item.v}">${item.l}</option>`
+                        }
+                        document.getElementById("numPlayers").innerHTML=option;
+                    </script>
                 </select>
             </div>
             <div>
